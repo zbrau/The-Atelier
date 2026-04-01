@@ -1,0 +1,142 @@
+/**
+ * Custom CSS for The Atelier PDF Reader 
+ */
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-5px); }
+}
+
+/* ===== DARK MODE GLOBAL OVERRIDES ===== */
+html.dark body {
+    background-color: #0f1629 !important;
+    color: #d8e2ff !important;
+}
+
+html.dark aside {
+    background-color: #111827 !important;
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+html.dark main {
+    background-color: #0f1629 !important;
+}
+
+html.dark header {
+    background-color: rgba(15, 22, 41, 0.85) !important;
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+html.dark section {
+    background-color: #0f1629 !important;
+}
+
+/* Target the actual Tailwind utility classes used in the app */
+html.dark .bg-surface,
+html.dark .bg-background,
+html.dark .bg-surface-bright {
+    background-color: #0f1629 !important;
+}
+
+html.dark .bg-slate-50 {
+    background-color: #111827 !important;
+}
+
+html.dark .bg-slate-100,
+html.dark .bg-slate-200\/50 {
+    background-color: #1a2640 !important;
+}
+
+/* Target view containers directly */
+html.dark #view-dashboard,
+html.dark #view-library,
+html.dark #view-viewer,
+html.dark #view-settings {
+    background-color: #0f1629 !important;
+}
+
+html.dark #view-dashboard > div,
+html.dark #view-library,
+html.dark #view-viewer,
+html.dark #view-settings {
+    background-color: #0f1629;
+}
+
+html.dark .bg-surface-container-lowest,
+html.dark .bg-white {
+    background-color: #1a2640 !important;
+}
+
+html.dark .bg-surface-container-low {
+    background-color: #162035 !important;
+}
+
+html.dark .bg-surface-container {
+    background-color: #1e2d4a !important;
+}
+
+html.dark .bg-surface-container-high {
+    background-color: #243256 !important;
+}
+
+html.dark h1, html.dark h2, html.dark h3 {
+    color: #d8e2ff !important;
+}
+
+html.dark p, html.dark span:not([class*="material"]) {
+    color: #a0b3d6;
+}
+
+html.dark .text-on-surface {
+    color: #d8e2ff !important;
+}
+
+html.dark .text-on-surface-variant {
+    color: #8aa3ce !important;
+}
+
+html.dark .text-indigo-700 {
+    color: #93b4ff !important;
+}
+
+html.dark .text-slate-500 {
+    color: #7a96c0 !important;
+}
+
+html.dark input {
+    background-color: #1a2640 !important;
+    color: #d8e2ff !important;
+}
+
+html.dark .divide-y > * {
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+html.dark .shadow-sm,
+html.dark .shadow {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
+}
+
+html.dark .bg-indigo-100 {
+    background-color: #1e3060 !important;
+}
+
+html.dark .border-r {
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+html.dark .bg-surface-container-low.rounded-full {
+    background-color: #1a2640 !important;
+}
