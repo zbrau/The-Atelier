@@ -82,7 +82,3 @@ Navigate to **Settings** from the sidebar to:
 - **Reset reading progress** for all documents
 
 ---
-
-## License
-
-This project is for personal use. Contact the author for other uses.
