@@ -1,86 +1,88 @@
 # The Atelier — Premium PDF Reader
 
-**The Atelier** es un lector de PDFs elegante y sin servidor que corre directamente en tu navegador. No necesita instalación ni cuenta: todos tus documentos se guardan localmente en el dispositivo usando IndexedDB.
+The Atelier is an elegant, serverless PDF reader that runs entirely in the browser. No installation or account is required; all documents are stored locally on the device using IndexedDB.
 
 ---
 
-## ✨ Características
+## Features
 
-| Función | Descripción |
+| Feature | Description |
 |---|---|
-| 📂 **Biblioteca personal** | Sube y gestiona todos tus PDFs desde una interfaz estilo galería |
-| 📖 **Lector integrado** | Renderizado de alta calidad con PDF.js |
-| 🔖 **Progreso de lectura** | Recuerda la última página leída y muestra el porcentaje completado |
-| 🔍 **Zoom ajustable** | Controla el nivel de zoom dentro del visor y configura un zoom por defecto |
-| ✏️ **Dibujo libre (Pencil)** | Anota directamente sobre la página; incluye deshacer trazo a trazo |
-| 🔊 **Texto a voz (TTS)** | Lee en voz alta el texto de la página actual (voz en español) |
-| 📝 **Notas por página** | Agrega, visualiza y elimina notas vinculadas a cada página del documento |
-| 🌙 **Modo oscuro** | Tema claro/oscuro persistente guardado en `localStorage` |
-| 🗑️ **Gestión de documentos** | Elimina PDFs individuales o borra toda la biblioteca desde Ajustes |
-| 🔄 **Reseteo de progreso** | Reinicia el avance de lectura de todos los documentos de un solo clic |
+| Personal library | Upload and manage PDFs from a gallery-style interface |
+| Built-in reader | High-quality rendering powered by PDF.js |
+| Reading progress | Remembers the last page read and shows the completion percentage |
+| Adjustable zoom | Control zoom level inside the viewer and set a default zoom |
+| Free draw (Pencil) | Annotate directly on the page with stroke-by-stroke undo |
+| Text-to-speech (TTS) | Reads the current page aloud using the browser's native speech synthesis |
+| Per-page notes | Add, view, and delete notes linked to each page of a document |
+| Dark mode | Persistent light/dark theme stored in `localStorage` |
+| Document management | Delete individual PDFs or clear the entire library from Settings |
+| Progress reset | Reset reading progress for all documents in one click |
 
 ---
 
-## 🚀 Cómo usar
+## Getting started
 
-### Requisitos
-Solo necesitas un navegador moderno (Chrome, Edge, Firefox, Safari). No hay dependencias que instalar.
+### Requirements
 
-### Ejecutar localmente
-1. Clona o descarga el repositorio:
+A modern browser (Chrome, Edge, Firefox, Safari) is all you need. There are no dependencies to install.
+
+### Run locally
+
+1. Clone or download the repository:
    ```bash
    git clone https://github.com/zbrau/The-Atelier.git
    cd The-Atelier
    ```
-2. Abre `index.html` directamente en tu navegador, o sírvelo con cualquier servidor estático:
+2. Open `index.html` directly in your browser, or serve it with any static file server:
    ```bash
-   # Con Python
+   # Python
    python -m http.server 8080
 
-   # Con Node.js (npx)
+   # Node.js
    npx serve .
    ```
-3. Visita `http://localhost:8080` en tu navegador.
+3. Visit `http://localhost:8080` in your browser.
 
-### Subir un PDF
-- Haz clic en **Upload PDF** en la barra lateral o en el área de arrastre del Dashboard.
-- El archivo se guarda en el almacenamiento local del navegador (IndexedDB); nunca se envía a ningún servidor.
+### Upload a PDF
+
+Click **Upload PDF** in the sidebar or drag a file onto the upload area on the Dashboard. The file is saved to the browser's local storage (IndexedDB) and is never sent to any server.
 
 ---
 
-## 🗂️ Estructura del proyecto
+## Project structure
 
 ```
 The-Atelier/
-├── index.html   # Estructura HTML y configuración de Tailwind
-├── main.js      # Lógica de la aplicación (IndexedDB, PDF.js, TTS, notas, dibujo)
-└── style.css    # Estilos personalizados y overrides del modo oscuro
+├── index.html   # HTML structure and Tailwind configuration
+├── main.js      # Application logic (IndexedDB, PDF.js, TTS, notes, drawing)
+└── style.css    # Custom styles and dark mode overrides
 ```
 
 ---
 
-## 🛠️ Tecnologías
+## Technologies
 
-- **[PDF.js](https://mozilla.github.io/pdf.js/)** `v3.11.174` — renderizado de PDFs en canvas
-- **[Tailwind CSS](https://tailwindcss.com/)** (CDN) — estilos utilitarios con tema personalizado Material You
-- **[Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)** — síntesis de voz nativa del navegador
-- **IndexedDB** — almacenamiento local de documentos y notas
-- **Google Fonts** — Inter, Manrope y Material Symbols
-
----
-
-## ⚙️ Ajustes disponibles
-
-Navega a **Settings** desde la barra lateral para:
-
-- Activar / desactivar el **modo oscuro**
-- Cambiar el **zoom por defecto** del visor (0.5× – 3.0×)
-- Ver el **espacio usado** por tus documentos
-- **Eliminar toda la biblioteca**
-- **Resetear el progreso** de lectura de todos los documentos
+- **[PDF.js](https://mozilla.github.io/pdf.js/)** `v3.11.174` — canvas-based PDF rendering
+- **[Tailwind CSS](https://tailwindcss.com/)** (CDN) — utility-first styles with a custom Material You theme
+- **[Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)** — native browser speech synthesis
+- **IndexedDB** — local storage for documents and notes
+- **Google Fonts** — Inter, Manrope, and Material Symbols
 
 ---
 
-## 📄 Licencia
+## Settings
 
-Este proyecto es de uso personal. Consulta al autor para otros usos.
+Navigate to **Settings** from the sidebar to:
+
+- Toggle **dark mode**
+- Change the **default zoom** level for the viewer (0.5x – 3.0x)
+- View the **storage used** by your documents
+- **Clear the entire library**
+- **Reset reading progress** for all documents
+
+---
+
+## License
+
+This project is for personal use. Contact the author for other uses.
